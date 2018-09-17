@@ -1,0 +1,130 @@
+body {
+	background-color: white;
+	color: black;
+	font-family: georgia;
+}
+
+h1 {
+}
+
+.t1 {
+	float: left;
+	position: block;
+	border:  black solid;
+}
+
+.t2 {
+	display: none;
+}
+
+td {
+	font-size: 25px;
+	border-color: green;
+}
+
+sup {
+	padding: 0px;
+	float: left;
+}
+
+input {
+	border: 0px;
+	width: 25px;
+	font-size: 24px;
+	text-align: center;
+}
+
+.green {
+	background-color: green;
+}
+
+.red {
+	background-color: red;
+}
+
+.issues {
+	float: right;
+	position: relative;
+	font-size: 20px;
+}
+
+.td1 {
+	border: 4px black solid;
+	border-right: 0px;
+}
+
+.td2 {
+	border: 4px black solid;
+	border-left-width: 0px;
+	border-right-width: 0px;
+}
+
+.td3 {
+	border: 4px black solid;
+	border-left: 0px;
+}
+
+.td4 {
+	border: 0px;
+}
+
+.td5 {
+	border: 4px black solid;
+	border-bottom: 0px;
+	border-top: 0px;
+}
+
+.td6 {
+	border: 4px black solid;
+	border-bottom-width: 4px;
+	border-top: 0px;
+}
+
+.checkbutton {
+	font-size: 20px;
+	border: 0px;
+	width: 125px;
+	background-color: #D4D0C8;
+}
+
+.check2button {
+	border: 0px;
+	width: 210px;
+	background-color: #D4D0C8;
+	display: none;
+	float: right;
+}
+
+.resetbutton {
+	float: right;
+	width: 125px;
+	background-color: #D4D0C8;
+}
+
+.completebutton {
+	font-size: 20px;
+	background-color: green;
+	color: white;
+	display: none;
+	width: 125px;
+}
+
+.mistakebutton {
+	font-size: 20px;	
+	background-color: red;
+	color: black;
+	display: none;
+	width: 125px;
+}
+
+.marks {
+	float: left;
+}
+
+.code {
+	position: absolute;
+	opacity: 0.3;
+	color: gray;
+	font-size: 12px;
+	left: 100%;
+}
