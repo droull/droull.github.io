@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Krossvord by droull</title>
+	<link rel="stylesheet" href="accets/css/css.css">
+	<script>
+		//hide mistake
+	function hidemistake(argument) {
+		$("#mistakebutton").hide();
+		$("#checkbutton").show();
+	}
+
+		//first vord
+	function firstvord(f) {
+	if ((f.a.value==("И")||("и"))
+		&&(f.b.value=="н")
+		&&(f.c.value=="ф")
+		&&(f.d.value=="о")
+		&&(f.e.value=="р")
+		&&(f.f.value=="м")
+		&&(f.g.value=="а")
+		&&(f.h.value=="ц")
+		&&(f.i.value=="и")
+		&&(f.j.value=="я")) {
+
+		$("#checkbutton1").hide();
+		$("#check2button1").hide();
+		$("#completebutton1").show();
+		$("#mistakebutton1").hide();
+	}else {
+		$("#checkbutton1").hide();
+		$("#mistakebutton1").show();
+		$("#check2button1").show();
+		}
+	}
+
+		//second vord
+	function secondvord(f) {
+	if ((f.d1.value==("Д")||("д"))
+		&&(f.d2.value=="а")
+		&&(f.d3.value=="н")
+		&&(f.d4.value=="н")
+		&&(f.d5.value=="ы")
+		&&(f.d6.value=="е")) {
+		
+		$("#checkbutton2").hide();
+		$("#resetbutton2").hide();
+		$("#completebutton2").show();
+		$("#mistakebutton2").hide();
+	}else {
+		$("#checkbutton2").hide();
+		$("#mistakebutton2").show();
+		}
+	}
+
+		//3rd vord
+	function thirdvord(f) {
+	if ((f.s1.value==("C")||("с"))
+		&&(f.s2.value=="о")
+		&&(f.s3.value=="о")
+		&&(f.s4.value=="б")
+		&&(f.s5.value=="щ")
+		&&(f.s6.value=="е")
+		&&(f.s7.value=="н")
+		&&(f.s8.value=="и")
+		&&(f.s9.value=="е")) {
+
+		$("#checkbutton3").hide();
+		$("#resetbutton3").hide();
+		$("#completebutton3").show();
+		$("#mistakebutton3").hide();
+	}else {
+		$("#checkbutton3").hide();
+		$("#mistakebutton3").show();
+		}
+	}
+
+		//4th vord
+	function fourthvord(f) {
+	if ((f.g1.value==("Г")||("г"))
+		&&(f.g2.value=="е")
+		&&(f.g3.value=="н")
+		&&(f.g4.value=="е")
+		&&(f.g8.value=="т")
+		&&(f.g5.value=="и")
+		&&(f.g6.value=="к")
+		&&(f.g7.value=="а")) {
+
+		$("#checkbutton4").hide();
+		$("#resetbutton4").hide();
+		$("#completebutton4").show();
+		$("#mistakebutton4").hide();
+	}else {
+		$("#checkbutton4").hide();
+		$("#mistakebutton4").show();
+		}
+	}
+
+		//5th vord
+	function fifthvord(f) {
+	if ((f.t1.value==("Т")||("т"))
+		&&(f.t2.value=="е")
+		&&(f.t3.value=="л")
+		&&(f.t4.value=="е")
+		&&(f.t5.value=="ф")
+		&&(f.t6.value=="о")
+		&&(f.t7.value=="н")) {
+
+		$("#checkbutton5").hide();
+		$("#resetbutton5").hide();
+		$("#completebutton5").show();
+		$("#mistakebutton5").hide();
+	}else {
+		$("#checkbutton5").hide();
+		$("#mistakebutton5").show();
+		}
+	}
+
+		//6th vord
+	function sixthvord(f) {
+	if ((f.e1.value==("Т")||("т"))
+		&&(f.e2.value=="е")
+		&&(f.e3.value=="о")
+		&&(f.e4.value=="р")
+		&&(f.e5.value=="и")
+		&&(f.e6.value=="я")) {
+
+		$("#checkbutton6").hide();
+		$("#resetbutton6").hide();
+		$("#completebutton6").show();
+		$("#mistakebutton6").hide();
+	}else {
+		$("#checkbutton6").hide();
+		$("#mistakebutton6").show();
+		}
+	}
+
+		//7th vord
+	function seventhvord(f) {
+	if ((f.f1.value==("Т")||("т"))
+		&&(f.g4.value=="е")
+		&&(f.f2.value=="л")
+		&&(f.t4.value=="е")
+		&&(f.f3.value=="г")
+		&&(f.e4.value=="р")
+		&&(f.f4.value=="а")
+		&&(f.f5.value=="ф")) {
+
+		$("#checkbutton7").hide();
+		$("#resetbutton7").hide();
+		$("#completebutton7").show();
+		$("#mistakebutton7").hide();
+	}else {
+		$("#checkbutton7").hide();
+		$("#mistakebutton7").show();
+		}
+	}
+
+		//8th vord
+	function eighthvord(f){
+	if ((f.g6.value==("К")||("к"))
+		&&(f.k2.value=="а")
+		&&(f.t7.value=="н")
+		&&(f.k4.value=="а")
+		&&(f.k5.value=="л")) {
+
+		$("#checkbutton8").hide();
+		$("#resetbutton8").hide();
+		$("#completebutton8").show();
+		$("#mistakebutton8").hide();
+	}else {
+		$("#checkbutton8").hide();
+		$("#mistakebutton8").show();
+		}
+	}
+
+		//bitvord
+	function bitvord(f) {
+	if ((f.s4.value==("Б")||("б"))
+		&&(f.b1.value=="и")
+		&&(f.g8.value=="т")) {
+
+		$("#checkbutton9").hide();
+		$("#completebutton9").show();
+		$("#mistakebutton9").hide();
+	}else {
+		$("#checkbutton9").hide();
+		$("#mistakebutton9").show();
+		}
+	}
+
+		//tenth vord
+	function tenthvord(f) {
+	if ((f.с1.value==("С")||("с"))
+		&&(f.s8.value=="и")
+		&&(f.с3.value=="г")
+		&&(f.с4.value=="н")
+		&&(f.с5.value=="а")
+		&&(f.с6.value=="л")) {
+
+		$("#checkbutton10").hide();
+		$("#resetbutton10").hide();
+		$("#completebutton10").show();
+		$("#mistakebutton10").hide();
+	}else {
+		$("#checkbutton10").hide();
+		$("#mistakebutton10").show();
+		}
+	}
+
+		//eleventh vord
+	function eleventhvord(f) {
+	if ((f.r1.value==("Р")||("р"))
+		&&(f.g7.value=="а")
+		&&(f.r3.value=="д")
+		&&(f.r4.value=="и")
+		&&(f.r5.value=="о")) {
+
+		$("#checkbutton11").hide();
+		$("#resetbutton11").hide();
+		$("#completebutton11").show();
+		$("#mistakebutton11").hide();
+	}else {
+		$("#checkbutton11").hide();
+		$("#mistakebutton11").show();
+		}
+	}
+	
+</script>
+</head>
+<body>
+	<h1>Krossvord by droull</h1>
+
+	<table class="t1" cellpadding="10px" border="1px" id="leftFit">
+<form action="" id="inform"><tr>
+	<td class="td1"><input placeholder="1" type="text" name="a" maxlength="1"></td>
+	<td class="td2"><input type="text" name="b" maxlength="1"></td>
+	<td class="td2"><input type="text" name="c" maxlength="1"></td>
+	<td class="td2"><input type="text" name="d" maxlength="1"></td>
+	<td class="td2"><input type="text" name="e" maxlength="1"></td>
+	<td class="td2"><input type="text" name="f" maxlength="1"></td>
+	<td class="td2"><input type="text" name="g" maxlength="1"></td>
+	<td class="td2"><input type="text" name="h" maxlength="1"></td>
+	<td class="td2"><input type="text" name="i" maxlength="1"></td>
+	<td class="td3"><input type="text" name="j" maxlength="1"></td>
+   </tr>
+
+   <tr>
+    <td class="td1"><input placeholder="2" type="text" name="d1" maxlength="1"></td>
+    <td class="td2"><input type="text" name="d2" maxlength="1"></td>
+    <td class="td2"><input type="text" name="d3" maxlength="1"></td>
+    <td class="td2"><input type="text" name="d4" maxlength="1"></td>
+    <td class="td2"><input type="text" name="d5" maxlength="1"></td>
+    <td class="td3"><input type="text" name="d6" maxlength="1"></td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td style="border: 4px black solid; border-bottom: 0px;"><input placeholder="10" type="text" name="с1" maxlength="1"></td>
+    <td class="td4">&nbsp;</td>
+   </tr>
+
+   <tr>
+    <td class="td4">&nbsp;</td>
+    <td class="td1"><input placeholder="3" name="s1" maxlength="1"></td>
+    <td class="td2"><input name="s2" maxlength="1"></td>
+    <td class="td2"><input name="s3" maxlength="1"></td>
+    <td style="border: 0px; border-top: 4px black solid;"><input placeholder="9" name="s4" maxlength="1"></td>
+    <td class="td2"><input name="s5" maxlength="1"></td>
+    <td class="td2"><input name="s6" maxlength="1"></td>
+    <td class="td2"><input name="s7" maxlength="1"></td>
+    <td style="border:0px;"><input name="s8" maxlength="1"></td>
+    <td class="td3"><input name="s9" maxlength="1"></td>
+   </tr>
+
+   <tr>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td style="border: 4px black solid; border-bottom-width: 0px;"><input placeholder="7" name="f1" maxlength="1"></td>
+    <td class="td5"><input name="b1" maxlength="1"></td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td style="border: 4px black solid; border-bottom: 0px;"><input placeholder="11" name="r1" maxlength="1"></td>
+    <td class="td5"><input type="text" name="с3" maxlength="1"></td>
+    <td class="td4">&nbsp;</td>
+   </tr>
+
+   <tr>
+	<td class="td1"><input placeholder="4" name="g1" maxlength="1"></td>
+	<td class="td2"><input name="g2" maxlength="1"></td>
+	<td class="td2"><input name="g3" maxlength="1"></td>
+	<td style="border: 0px solid;"><input name="g4" maxlength="1"></td>
+	<td style="border: 0px solid; border-bottom: 4px black solid"><input name="g8" maxlength="1"></td>
+	<td class="td2"><input name="g5" maxlength="1"></td>
+	<td style="border: 0px solid; border-top: 4px black solid;"><input placeholder="8" name="g6" maxlength="1"></td>
+	<td style="border: 0px black solid; border-right: 4px black solid;"><input name="g7" maxlength="1"></td>
+	<td class="td5"><input type="text" name="с4" maxlength="1"></td>
+	<td class="td4">&nbsp;</td>
+   </tr>
+
+   <tr>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td5"><input name="f2" maxlength="1"></td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td5"><input type="text" name="k2" maxlength="1"></td>
+    <td class="td5"><input type="text" name="r3" maxlength="1"></td>
+    <td class="td5"><input type="text" name="с5" maxlength="1"></td>
+    <td class="td4">&nbsp;</td>
+   </tr>
+
+   <tr>
+    <td class="td1"><input placeholder="5" name="t1" maxlength="1"></td>
+    <td class="td2"><input name="t2" maxlength="1"></td>
+    <td class="td2"><input name="t3" maxlength="1"></td>
+    <td style="border: 0px solid;"><input name="t4" maxlength="1"></td>
+    <td class="td2"><input name="t5" maxlength="1"></td>
+    <td class="td2"><input name="t6" maxlength="1"></td>
+    <td style="border: 0px solid; border-right: 4px black solid;"><input name="t7" maxlength="1"></td>
+    <td class="td5"><input type="text" name="r4" maxlength="1"></td>
+    <td class="td6"><input type="text" name="с6" maxlength="1"></td>
+    <td class="td4">&nbsp;</td>
+   </tr>
+
+   <tr>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td5"><input name="f3" maxlength="1"></td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td5"><input name="k4" maxlength="1"></td>
+    <td class="td6"><input type="text" name="r5" maxlength="1"></td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+   </tr>
+
+   <tr>
+	<td class="td1"><input placeholder="6" name="e1" maxlength="1"></td>
+	<td class="td2"><input name="e2" maxlength="1"></td>
+	<td class="td2"><input name="e3" maxlength="1"></td>
+	<td style="border: 0px solid;"><input name="e4" maxlength="1"></td>
+	<td class="td2"><input name="e5" maxlength="1"></td>
+	<td class="td3"><input name="e6" maxlength="1"></td>
+	<td style="border: 4px black solid; border-top: 0px solid;"><input name="k5" maxlength="1"></td>
+	<td class="td4">&nbsp;</td>
+	<td class="td4">&nbsp;</td>
+	<td class="td4">&nbsp;</td>
+   </tr>
+
+   <tr>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td5"><input name="f4" maxlength="1"></td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+   </tr>
+
+   <tr>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td style="border: 4px black solid; border-top: 0px;"><input name="f5" maxlength="1"></td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+   </tr>
+
+</form>
+	</table>
+		<div class="issues">
+
+			<p>
+				1. Cведения, передаваемые людьми устным, письменным или другим способом.<br>
+				<input form="inform" class="checkbutton" id="checkbutton1" type="button" value="Проверить" onClick="firstvord(this.form)">
+				<input form="inform" class="completebutton" id="completebutton1" type="button" value="Верно!">
+				<input form="inform" class="mistakebutton" id="mistakebutton1" type="button" value="Неверно!" onClick="firstvord(this.form)">
+			</p>
+
+			<p>
+				2. Сведения, обстоятельства, служащие для какого-нибудь вывода, решения.<br>
+				<input form="inform" class="checkbutton" id="checkbutton2" type="button" value="Проверить" onClick="secondvord(this.form)">
+				<input form="inform" class="completebutton" id="completebutton2" type="button" value="Верно!">
+				<input form="inform" class="mistakebutton" id="mistakebutton2" type="button" value="Неверно!" onClick="secondvord(this.form)">
+			</p>
+
+			<p>
+				3. Форма предоставления информации, совокупность знаков,<br> содержащих информацию<br>
+				<input form="inform" class="checkbutton" id="checkbutton3" type="button" value="Проверить" onClick="thirdvord(this.form)">
+				<input form="inform" class="completebutton" id="completebutton3" type="button" value="Верно!">
+				<input form="inform" class="mistakebutton" id="mistakebutton3" type="button" value="Неверно!" onClick="thirdvord(this.form)">
+			</p>
+
+			<p>
+				4. Наука, изучающая наследственность<br>
+				<input form="inform" class="checkbutton" id="checkbutton4" type="button" value="Проверить" onClick="fourthvord(this.form)">
+				<input form="inform" class="completebutton" id="completebutton4" type="button" value="Верно!">
+				<input form="inform" class="mistakebutton" id="mistakebutton4" type="button" value="Неверно!" onClick="fourthvord(this.form)">
+			</p>
+
+			<p>
+				5. Устройство для передачи и приёма звука на расстоянии<br>
+				<input form="inform" class="checkbutton" id="checkbutton5" type="button" value="Проверить" onClick="fifthvord(this.form)">
+				<input form="inform" class="completebutton" id="completebutton5" type="button" value="Верно!">
+				<input form="inform" class="mistakebutton" id="mistakebutton5" type="button" value="Неверно!" onClick="fifthvord(this.form)">
+			</p>
+			<p>
+				6. Идея для выдвижения которой необходимы обоснования<br>
+				<input form="inform" class="checkbutton" id="checkbutton6" type="button" value="Проверить" onClick="sixthvord(this.form)">
+				<input form="inform" class="completebutton" id="completebutton6" type="button" value="Верно!">
+				<input form="inform" class="mistakebutton" id="mistakebutton6" type="button" value="Неверно!" onClick="sixthvord(this.form)">
+			</p>
+			<p>
+				7. Система технических приспособлений для передачи сообщений<br> на расстояние по проводам при помощи электрической энергии<br>
+				<input form="inform" class="checkbutton" id="checkbutton7" type="button" value="Проверить" onClick="seventhvord(this.form)">
+				<input form="inform" class="completebutton" id="completebutton7" type="button" value="Верно!">
+				<input form="inform" class="mistakebutton" id="mistakebutton7" type="button" value="Неверно!" onClick="seventhvord(this.form)">
+			</p>
+			<p>
+				8. Пространство для передачи информации<br>
+				<input form="inform" class="checkbutton" id="checkbutton8" type="button" value="Проверить" onClick="eighthvord(this.form)">
+				<input form="inform" class="completebutton" id="completebutton8" type="button" value="Верно!">
+				<input form="inform" class="mistakebutton" id="mistakebutton8" type="button" value="Неверно!" onClick="eighthvord(this.form)">
+			</p>
+			<p>
+				9. 0,001 Килобита<br>
+				<input form="inform" class="checkbutton" id="checkbutton9" type="button" value="Проверить" onClick="bitvord(this.form)">
+				<input form="inform" class="completebutton" id="completebutton9" type="button" value="Верно!">
+				<input form="inform" class="mistakebutton" id="mistakebutton9" type="button" value="Неверно!" onClick="bitvord(this.form)">
+			</p>
+			<p> 10. Предупреждение, сообщение о чём-н. нежелательном,<br> что может совершиться<br>
+				<input form="inform" class="checkbutton" id="checkbutton10" type="button" value="Проверить" onClick="tenthvord(this.form)">
+				<input form="inform" class="completebutton" id="completebutton10" type="button" value="Верно!">
+				<input form="inform" class="mistakebutton" id="mistakebutton10" type="button" value="Неверно!" onClick="tenthvord(this.form)">
+			</p>
+			<p>
+				11. Разновидность беспроводной передачи информации <br>
+				<input form="inform" class="checkbutton" id="checkbutton11" type="button" value="Проверить" onClick="eleventhvord(this.form)">
+				<input form="inform" class="completebutton" id="completebutton11" type="button" value="Верно!">
+				<input form="inform" class="mistakebutton" id="mistakebutton11" type="button" value="Неверно!" onClick="eleventhvord(this.form)">
+			</p>
+
+
+		</div>	
+	
+	<div class="marks"><p>* Если одна из букв не правильна - то всё слово помечается как ошибочное</p><p>** Повторное нажатие на красную кнопку также запускает повторную проверку слова</p></div>
+
+	<table class="t2" cellpadding="10px" border="2">
+   <tr>
+	<td><sup>1</sup>И></td><td>Н</td><td>Ф</td><td>О</td><td>Р</td><td>М</td><td>А</td><td>Ц</td><td>И</td><td>Я</td>
+   </tr>
+   <tr>
+    <td><sup>2</sup>Д</td><td>А</td><td>Н</td><td>Н</td><td>Ы</td><td>Е</td><td>&nbsp;</td><td>&nbsp;</td><td><sup>6</sup>С</td><td>&nbsp;</td>
+   </tr>
+   <tr>
+    <td>&nbsp;</td><td><sup>3</sup>С</td><td>О</td><td>О</td><td><sup>9</sup>Б</td><td>Щ</td><td>Е</td><td>Н</td><td>И</td><td>Е</td>
+   </tr>
+   <tr>
+    <td>О</td><td>&nbsp;</td><td>&nbsp;</td><td><sup>7</sup>Т</td><td>И</td><td>&nbsp;</td><td>&nbsp;</td><td><sup>7</sup>Р</td><td>Г</td><td>&nbsp;</td>
+   </tr>
+   <tr>
+	<td><sup>4</sup>Г</td><td>Е</td><td>Н</td><td>Е</td><td>Т</td><td>И</td><td><sup>8</sup>К</td><td>А</td><td>Н</td><td>&nbsp;</td>
+   </tr>
+   <tr>
+    <td>М</td><td>&nbsp;</td><td>&nbsp;</td><td>Л</td><td>&nbsp;</td><td>&nbsp;</td><td>А</td><td>Д</td><td>А</td><td>&nbsp;</td>
+   </tr>
+   <tr>
+    <td><sup>5</sup>Т</td><td>Е</td><td>Л</td><td>Е</td><td>Ф</td><td>О</td><td>Н</td><td>И</td><td>Л</td><td>&nbsp;</td>
+   </tr>
+   <tr>
+    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Г</td><td>&nbsp;</td><td>&nbsp;</td><td>А</td><td>О</td><td>&nbsp;</td><td>&nbsp;
+   </tr>
+   <tr>
+	<td><sup>10</sup>Т</td><td>Е</td><td>О</td><td>Р</td><td>И</td><td>Я</td><td>Л</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;
+   </tr>
+   <tr>
+    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>А</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;
+   </tr>
+   <tr>
+    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Ф</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</table>
+
+<script src="accets/JS!PHP/jquery.js"></script>
+
+<!-- krossword BY DROULL ver 1.0 -->
+</body>
+</html>
