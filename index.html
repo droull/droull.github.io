@@ -5,10 +5,22 @@
 	<title>Krossvord by droull</title>
 	<link rel="stylesheet" href="css/css.css">
 	<script>
-		//hide mistake
-	function hidemistake(argument) {
-		$("#mistakebutton").hide();
-		$("#checkbutton").show();
+		//filled
+	function filled(argument) {
+		$("#leftFit").hide();
+		$(".filled").hide();
+		$(".marks").hide();
+		$("#rightFit").show();
+		$(".back").show();
+	}
+
+	function back(argument) {
+		$("#rightFit").hide();
+		$(".back").hide();
+		$("#leftFit").show();
+		$(".marks").show();
+		$(".filled").show();
+
 	}
 
 		//first vord
@@ -230,6 +242,9 @@
 </script>
 </head>
 <body>
+	<input type="button" value="Заполнить кроссворд" class="filled" onclick="filled()">
+	<input type="button" value="Назад к кроссворду" class="back" onclick="back()">
+
 	<h1>Krossvord by droull</h1>
 
 	<table class="t1" cellpadding="10px" border="1px" id="leftFit">
@@ -451,47 +466,163 @@
 			</p>
 
 
-		</div>	
+		</div>
+
+<table class="t2" cellpadding="10px" border="1px" id="rightFit">
+	<tr>
+	<td class="td1"><input type="text" readonly="readonly" placeholder="И"></td>
+	<td class="td2"><input type="text" readonly="readonly" placeholder="н"></td>
+	<td class="td2"><input type="text" readonly="readonly" placeholder="ф"></td>
+	<td class="td2"><input type="text" readonly="readonly" placeholder="о"></td>
+	<td class="td2"><input type="text" readonly="readonly" placeholder="р"></td>
+	<td class="td2"><input type="text" readonly="readonly" placeholder="м"></td>
+	<td class="td2"><input type="text" readonly="readonly" placeholder="а"></td>
+	<td class="td2"><input type="text" readonly="readonly" placeholder="ц"></td>
+	<td class="td2"><input type="text" readonly="readonly" placeholder="и"></td>
+	<td class="td3"><input type="text" readonly="readonly" placeholder="я"></td>
+   </tr>
+
+   <tr>
+    <td class="td1"><input type="text" readonly="readonly" placeholder="Д"></td>
+    <td class="td2"><input type="text" readonly="readonly" placeholder="а"></td>
+    <td class="td2"><input type="text" readonly="readonly" placeholder="н"></td>
+    <td class="td2"><input type="text" readonly="readonly" placeholder="н"></td>
+    <td class="td2"><input type="text" readonly="readonly" placeholder="ы"></td>
+    <td class="td3"><input type="text" readonly="readonly" placeholder="е"></td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td style="border: 4px black solid; border-bottom: 0px;"><input type="text" readonly="readonly" placeholder="С"></td>
+    <td class="td4">&nbsp;</td>
+   </tr>
+
+   <tr>
+    <td class="td4">&nbsp;</td>
+    <td class="td1"><input type="text" readonly="readonly" placeholder="С"></td>
+    <td class="td2"><input type="text" readonly="readonly" placeholder="о"></td>
+    <td class="td2"><input type="text" readonly="readonly" placeholder="о"></td>
+    <td style="border: 0px; border-top: 4px black solid;"><input type="text" readonly="readonly" placeholder="б"></td>
+    <td class="td2"><input type="text" readonly="readonly" placeholder="щ"></td>
+    <td class="td2"><input type="text" readonly="readonly" placeholder="е"></td>
+    <td class="td2"><input type="text" readonly="readonly" placeholder="н"></td>
+    <td style="border:0px;"><input type="text" readonly="readonly" placeholder="и"></td>
+    <td class="td3"><input type="text" readonly="readonly" placeholder="е"></td>
+   </tr>
+
+   <tr>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td style="border: 4px black solid; border-bottom-width: 0px;"><input type="text" readonly="readonly" placeholder="Т"></td>
+    <td class="td5"><input type="text" readonly="readonly" placeholder="и"></td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td style="border: 4px black solid; border-bottom: 0px;"><input type="text" readonly="readonly" placeholder="Р"></td>
+    <td class="td5"><input type="text" readonly="readonly" placeholder="г"></td>
+    <td class="td4">&nbsp;</td>
+   </tr>
+
+   <tr>
+	<td class="td1"><input type="text" readonly="readonly" placeholder="Г"></td>
+	<td class="td2"><input type="text" readonly="readonly" placeholder="е"></td>
+	<td class="td2"><input type="text" readonly="readonly" placeholder="н"></td>
+	<td style="border: 0px solid;"><input type="text" readonly="readonly" placeholder="е"></td>
+	<td style="border: 0px solid; border-bottom: 4px black solid"><input type="text" readonly="readonly" placeholder="т"></td>
+	<td class="td2"><input type="text" readonly="readonly" placeholder="и"></td>
+	<td style="border: 0px solid; border-top: 4px black solid;"><input type="text" readonly="readonly" placeholder="к"></td>
+	<td style="border: 0px black solid; border-right: 4px black solid;"><input type="text" readonly="readonly" placeholder="а"></td>
+	<td class="td5"><input type="text" readonly="readonly" placeholder="н"></td>
+	<td class="td4">&nbsp;</td>
+   </tr>
+
+   <tr>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td5"><input type="text" readonly="readonly" placeholder="л"></td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td5"><input type="text" readonly="readonly" placeholder="а"></td>
+    <td class="td5"><input type="text" readonly="readonly" placeholder="д"></td>
+    <td class="td5"><input type="text" readonly="readonly" placeholder="а"></td>
+    <td class="td4">&nbsp;</td>
+   </tr>
+
+   <tr>
+    <td class="td1"><input type="text" readonly="readonly" placeholder="Т"></td>
+    <td class="td2"><input type="text" readonly="readonly" placeholder="е"></td>
+    <td class="td2"><input type="text" readonly="readonly" placeholder="л"></td>
+    <td style="border: 0px solid;"><input type="text" readonly="readonly" placeholder="е"></td>
+    <td class="td2"><input type="text" readonly="readonly" placeholder="ф"></td>
+    <td class="td2"><input type="text" readonly="readonly" placeholder="о"></td>
+    <td style="border: 0px solid; border-right: 4px black solid;"><input type="text" readonly="readonly" placeholder="н"></td>
+    <td class="td5"><input type="text" readonly="readonly" placeholder="и"></td>
+    <td class="td6"><input type="text" readonly="readonly" placeholder="л"></td>
+    <td class="td4">&nbsp;</td>
+   </tr>
+
+   <tr>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td5"><input type="text" readonly="readonly" placeholder="г"></td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td5"><input type="text" readonly="readonly" placeholder="а"></td>
+    <td class="td6"><input type="text" readonly="readonly" placeholder="о"></td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+   </tr>
+
+   <tr>
+	<td class="td1"><input type="text" readonly="readonly" placeholder="Т"></td>
+	<td class="td2"><input type="text" readonly="readonly" placeholder="е"></td>
+	<td class="td2"><input type="text" readonly="readonly" placeholder="о"></td>
+	<td style="border: 0px solid;"><input type="text" readonly="readonly" placeholder="р"></td>
+	<td class="td2"><input type="text" readonly="readonly" placeholder="и"></td>
+	<td class="td3"><input type="text" readonly="readonly" placeholder="я"></td>
+	<td style="border: 4px black solid; border-top: 0px solid;"><input type="text" readonly="readonly" placeholder="л"></td>
+	<td class="td4">&nbsp;</td>
+	<td class="td4">&nbsp;</td>
+	<td class="td4">&nbsp;</td>
+   </tr>
+
+   <tr>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td5"><input type="text" readonly="readonly" placeholder="а"></td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+   </tr>
+
+   <tr>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td style="border: 4px black solid; border-top: 0px;"><input type="text" readonly="readonly" placeholder="ф"></td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+    <td class="td4">&nbsp;</td>
+   </tr>
+
+</form>
+	</table>
+
 	
 	<div class="marks"><p>* Если одна из букв не правильна - то всё слово помечается как ошибочное</p><p>** Повторное нажатие на красную кнопку также запускает повторную проверку слова</p></div>
 
-	<table class="t2" cellpadding="10px" border="2">
-   <tr>
-	<td><sup>1</sup>И></td><td>Н</td><td>Ф</td><td>О</td><td>Р</td><td>М</td><td>А</td><td>Ц</td><td>И</td><td>Я</td>
-   </tr>
-   <tr>
-    <td><sup>2</sup>Д</td><td>А</td><td>Н</td><td>Н</td><td>Ы</td><td>Е</td><td>&nbsp;</td><td>&nbsp;</td><td><sup>6</sup>С</td><td>&nbsp;</td>
-   </tr>
-   <tr>
-    <td>&nbsp;</td><td><sup>3</sup>С</td><td>О</td><td>О</td><td><sup>9</sup>Б</td><td>Щ</td><td>Е</td><td>Н</td><td>И</td><td>Е</td>
-   </tr>
-   <tr>
-    <td>О</td><td>&nbsp;</td><td>&nbsp;</td><td><sup>7</sup>Т</td><td>И</td><td>&nbsp;</td><td>&nbsp;</td><td><sup>7</sup>Р</td><td>Г</td><td>&nbsp;</td>
-   </tr>
-   <tr>
-	<td><sup>4</sup>Г</td><td>Е</td><td>Н</td><td>Е</td><td>Т</td><td>И</td><td><sup>8</sup>К</td><td>А</td><td>Н</td><td>&nbsp;</td>
-   </tr>
-   <tr>
-    <td>М</td><td>&nbsp;</td><td>&nbsp;</td><td>Л</td><td>&nbsp;</td><td>&nbsp;</td><td>А</td><td>Д</td><td>А</td><td>&nbsp;</td>
-   </tr>
-   <tr>
-    <td><sup>5</sup>Т</td><td>Е</td><td>Л</td><td>Е</td><td>Ф</td><td>О</td><td>Н</td><td>И</td><td>Л</td><td>&nbsp;</td>
-   </tr>
-   <tr>
-    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Г</td><td>&nbsp;</td><td>&nbsp;</td><td>А</td><td>О</td><td>&nbsp;</td><td>&nbsp;
-   </tr>
-   <tr>
-	<td><sup>10</sup>Т</td><td>Е</td><td>О</td><td>Р</td><td>И</td><td>Я</td><td>Л</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;
-   </tr>
-   <tr>
-    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>А</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;
-   </tr>
-   <tr>
-    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Ф</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-	</table>
+
 
 <script src="js/jquery.js"></script>
 
-<!-- krossword BY DROULL ver 1.0 -->
+<!-- krossword BY DROULL ver 1.1 -->
+
 </body>
 </html>
