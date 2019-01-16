@@ -1,0 +1,49 @@
+body {
+	background-color: #1F2046;
+	color: #C6CBF1;
+	margin: 0px;
+	font-family: Inconsolata;
+	font-size: 30px;
+}
+
+div {
+}
+
+#issue {
+	color: #2948BF;
+	font-size: 20px;
+	text-decoration: underline;
+}
+
+.wrapper {
+	margin-top: 20px;
+}
+
+.main {
+	margin: auto;
+	max-width: 900px;
+}
+
+.lessons {
+	text-align: center;
+}
+
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+.monday,.thuesday,.friday,.thuersday,.wednesday {
+	margin: 5px 0px 5px 0px;
+	border: 0px;
+	font-size: 30px;
+	color: #C6CBF1;
+	width: 100%;
+	text-align: center;
+	max-width: 900px;
+	letter-spacing: 1.5px;
+	background-color: #272858;
+}

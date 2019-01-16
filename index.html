@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<title>?</title>
+	<link rel="stylesheet" href="css/general.css">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	
+</head>
+<body>
+	<div class="wrapper">
+		
+		<div class="main">
+			
+			<button class="monday" onclick="show_mon()">Понедельник</button>
+			
+			<div class="lessons hide mon">
+				<div>Физика <br> ~ </div>
+				<div>Английский язык <br> ~ </div>
+				<div>Геометрия <br> Пункт 22 №172</div>
+				<div>Геометрия</div>
+				<div>Физ-ра</div>
+				<div>Литература <br> ~</div>
+				<div>Физика/НВП <br> ~</div>
+			</div>
+	
+			<button class="thuesday" onClick="show_tue()">Вторник</button>
+
+			<div class="lessons tue hide">
+
+				<div>УГДД <br> "Моя гражданская позиция"</div>
+				<div>История <br> §8</div>
+				<div>Русский язык <br> ~</div>
+				<div>Биология <br> §17(пингвин);Характеристика биосинтеза белков;</div>
+				<div>Физ-ра</div>
+				<div>История отечества</div>
+				<div>Информатика</div>
+			</div>
+
+			<button class="wednesday" onclick="show_wed()">Среда</button>
+
+			<div class="lessons wed hide">
+
+				<div>Химия/Биология <br>§21-22 стр104 №4,6; стр 150 №5 </div>
+				<div>Алгебра <br> ~</div>
+				<div>Английский язык <br>~</div>
+				<div>Украинский язык <br> Мартин Боруля прочит.</div>
+				<div>Литераутра <br>~</div>
+				<div>Химия</div>
+			</div>
+
+			<button class="thuersday" onclick="show_tuer()">Четверг</button>
+
+			<div class="lessons tuer hide">
+
+
+				<div>Физ-ра</div>
+				<div>Оющество <br> -</div>
+				<div>Русский язык <br>стр.242,244 Упр.349,360</div>
+				<div>Экономика <br> -</div>
+				<div>Всеобщая история <br> -</div>
+				<div>НВП</div>
+			</div>
+
+			<button class="friday" onclick="show_F()">Пятница</button>
+
+			<div class="lessons F hide">
+
+				<div>География <br> -</div>
+				<div>Английский язык <br> Spotlight 6 translane,voc.work + p67 ex7; p69 ex7,8; p80 ex5a;(in pen).</div>
+				<div>Алгебра <br>§17 №269,272,274. </div>
+				<div>Физика <br>§63 стр 211(A4,A5),213 №3</div>
+				<div>Литература <br> "Пребываение Жульена в особняке Де Ла Моля"</div>
+				<div>Алгебра</div>
+				<div>Информатика <br>§12-13 C.р.</div>
+			</div>
+
+
+
+			<a id="issue" target="_blank" href="https://vk.com/droull">Нашли ошибку? Есть идея?</a>
+
+		</div>
+
+		<script>
+			function show_mon() {
+				$(".mon").toggleClass("show hide");
+			}
+			function show_tue() {
+				$(".tue").toggleClass("show hide");
+			}
+			function show_wed() {
+				$(".wed").toggleClass("show hide");
+			}
+			function show_tuer() {
+				$(".tuer").toggleClass("show hide");
+			}
+			function show_F() {
+				$(".F").toggleClass("show hide");
+			}
+		</script>
+
+	</div>
+</body>
+</html>
