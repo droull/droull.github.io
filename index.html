@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<script>
+function func () {
+var week_num = Math.ceil(((new Date()).getDate()+3) / 7);
+if (week_num == 3) {
+  document.location = document.getElementById ("week3").href;
+}else if (week_num == 4) {
+  document.location = document.getElementById ("week4").href;
+}
+}
+
+</script>
+ 
+<body onload="func();">
+<a id = "week3" href="html/week3.html" class="link"></a>
+<a id = "week4" href="html/week4.html" class="link"></a>
+</body>
+</html>
