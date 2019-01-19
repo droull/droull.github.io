@@ -10,6 +10,7 @@ div {
 }
 
 #issue {
+	text-align: center;
 	color: #2948BF;
 	font-size: 20px;
 	text-decoration: underline;
