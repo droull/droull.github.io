@@ -1,21 +1,32 @@
-			function show_mon() {
-				$(".mon").toggleClass("show hide");
-			}
-			function show_tue() {
-				$(".tue").toggleClass("show hide");
-			}
-			function show_wed() {
-				$(".wed").toggleClass("show hide");
-			}
-			function show_tuer() {
-				$(".tuer").toggleClass("show hide");
-			}
-			function show_F() {
-				$(".F").toggleClass("show hide");
+			function toggleweek(day) {
+				if (day==1) {
+					$(".mon").toggleClass("show hide");
+				}else if (day==2) {
+					$(".tue").toggleClass("show hide");
+				}else if (day==3) {
+					$(".wed").toggleClass("show hide");
+				}else if (day==4) {
+					$(".tuer").toggleClass("show hide");
+				}else if (day==5) {
+					$(".F").toggleClass("show hide");
+				}
 			}
 
 			if ($("html").hasClass("week3")||$("html").hasClass("week1")) {
 				$(".up").addClass("underline");
 			}else if ($("html").hasClass("week4")||$("html").hasClass("week2")) {
 				$(".down").addClass("underline");
+			}
+
+			function hide_all(argument) {
+				$(".wrapper,.allready_be").toggleClass("hide show");
+				
+				/* On future
+				if (argument==1) {
+					$(".lorem").removeClass("hide");
+				}else if (argument==2) {
+					$(".rus").removeClass("hide")
+				}else if (argument==3) {
+					$(".lorem,.rus").addClass("hide");
+				}*/
 			}
