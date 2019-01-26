@@ -12,7 +12,8 @@
 	
 </head>
 <body>
-	<div class="wrapper">
+
+	<div class="wrapper show">
 		
 		<div class="main">
 			
@@ -30,11 +31,11 @@
 				</a>
 			</div>
 			
-			<button class="monday" onclick="show_mon()">Понедельник</button>
+			<button class="monday" onclick="toggleweek(1);">Понедельник</button>
 			
 			<div class="lessons hide mon">
 				<div>
-					Физика<br>~
+					Физика<br>-
 				</div>
 				<div>
 					Английский язык<br>p.78.read,vocab + №1
@@ -50,7 +51,7 @@
 				<div><span class="up">НВП</span>/<span class="down">Физика</span> <br></div>
 			</div>
 	
-			<button class="thuesday" onClick="show_tue()">Вторник</button>
+			<button class="thuesday" onClick="toggleweek(2)">Вторник</button>
 
 			<div class="lessons tue hide">
 
@@ -58,10 +59,11 @@
 					УГДД<br>Тема 9-11
 				</div>
 				<div>
-					<span class="up">История отечества</span>/<span class="down">Комп.Графика</span>Подготовить сообщение "Предпосылки НЭПа"<br>
+					<span class="up">История отечества</span>/<span class="down">Комп.Графика</span><br>Подготовить сообщение "Предпосылки НЭПа"
 				</div>
 				<div>
-					Русский язык<br>Написать хар-ку о человеке из класса
+					Русский язык<br>Написать хар-ку о человеке и класса
+					(<a href="#" style="color: #C6CBF1;" onclick="hide_all(2);">Скелет работы</a>)
 				</div>
 				<div>
 					Биология<br>Написать вирусные заболевания и охарактеризовать их
@@ -75,7 +77,7 @@
 				</div>
 			</div>
 
-			<button class="wednesday" onclick="show_wed()">Среда</button>
+			<button class="wednesday" onclick="toggleweek(3)">Среда</button>
 
 			<div class="lessons wed hide">
 
@@ -97,7 +99,7 @@
 				<div>Химия</div>§21-22, стр103 №1,2 + задания в тетр
 			</div>
 
-			<button class="thuersday" onclick="show_tuer()">Четверг</button>
+			<button class="thuersday" onclick="toggleweek(4)">Четверг</button>
 
 			<div class="lessons tuer hide">
 
@@ -120,7 +122,7 @@
 				</div>
 			</div>
 
-			<button class="friday" onclick="show_F()">Пятница</button>
+			<button class="friday" onclick="toggleweek(5)">Пятница</button>
 
 			<div class="lessons F hide">
 
@@ -154,6 +156,53 @@
 
 		<script src="../javascript/main.js"></script>
 
+		<!-- <a href="#" onclick="hide_all(1);" >Lorem ipsum.</a> -->
+
 	</div>
+
+		<div class="allready_be hide">
+			<button onclick="hide_all(3)" id="allready_be">Назад</button>
+			<div class="skeleton">
+				<ol class="rus">
+					<li>
+						Отношение к учёбе. Особенности познавательской деятельности
+					</li>
+					<li>
+						Физическое развитие
+					</li>
+					<li>
+						Черты характера
+					</li>
+					<li>
+						Эмоциональная реакция
+					</li>
+					<li>
+						Волевые качества
+					</li>
+					<li>
+						Модель поведения в сложной ситуации
+					</li>
+					<li>
+						Личностные устремления. Цели
+					</li>
+					<li>
+						Роль в коллективе
+					</li>
+					<li>
+						Взаимоотношения в коллективе
+					</li>
+					<li>
+						Нравственные качества
+					</li>
+					<li>
+						Отношение к старшим
+					</li>
+					<li>
+						Модель взаимоотношений в семье
+					</li>
+				</ol>
+				<!-- <p class="lorem hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, possimus.</p> -->
+			</div>
+		</div>
 </body>
 </html>
