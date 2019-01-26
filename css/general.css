@@ -6,14 +6,12 @@ body {
 	font-size: 30px;
 }
 
-div {
-}
-
 #issue {
 	text-align: center;
 	color: #2948BF;
 	font-size: 20px;
 	text-decoration: underline;
+	margin: auto;
 }
 
 .main {
@@ -35,9 +33,8 @@ div {
 	display: none;
 }
 
-.monday,.thuesday,.friday,.thuersday,.wednesday {
+.monday,.thuesday,.friday,.thuersday,.wednesday,#allready_be {
 	margin: 5px 0px 5px 0px;
-	border: 0px;
 	font-size: 30px;
 	color: #C6CBF1;
 	width: 100%;
@@ -45,7 +42,6 @@ div {
 	height: 75px;
 	max-width: 900px;
 	letter-spacing: 1.5px;
-	background-color: #272858;
 }
 
 .underline {
@@ -78,4 +74,13 @@ button {
 
 .left {
 	float: left;
+}
+
+.allready_be {
+	margin: auto;
+	max-width: 800px;
+}
+
+.skeleton {
+	margin-left: 17px;
 }
