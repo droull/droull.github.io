@@ -43,6 +43,13 @@ body {
 	max-width: 900px;
 	letter-spacing: 1.5px;
 }
+.monday:hover,.thuesday:hover,.friday:hover,.thuersday:hover,.wednesday:hover,#allready_be:hover {
+	background-color: #004B80;
+}
+
+.backlight {
+	background-color: #004B80;
+}
 
 .underline {
 	text-decoration: underline;
