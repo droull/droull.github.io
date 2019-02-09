@@ -1,14 +1,19 @@
 			function toggleweek(day) {
 				if (day==1) {
 					$(".mon").toggleClass("show hide");
+					$(".monday").toggleClass("backlight");
 				}else if (day==2) {
 					$(".tue").toggleClass("show hide");
+					$(".thuesday").toggleClass("backlight");
 				}else if (day==3) {
 					$(".wed").toggleClass("show hide");
+					$(".wednesday").toggleClass("backlight");
 				}else if (day==4) {
 					$(".tuer").toggleClass("show hide");
+					$(".thuersday").toggleClass("backlight");
 				}else if (day==5) {
 					$(".F").toggleClass("show hide");
+					$(".friday").toggleClass("backlight");
 				}
 			}
 
