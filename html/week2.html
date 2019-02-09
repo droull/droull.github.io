@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="week3"><!-- Шиппиринг из main для underlin`a-->
+<head>
+	
+	<meta charset="UTF-8">
+	<title>Дневник работяги</title>
+	<link rel="stylesheet" href="../css/general.css">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<script src="../javascript/jquery.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	
+</head>
+<body><!-- § -->
+	<div class="wrapper">
+		
+		<div class="main">
+			
+			<div class="switch">
+				<a href="week1.html">
+					<button class="left">
+						<i class="fas fa-angle-left"></i>
+					</button>
+				</a>
+				11-15
+				<a href="week4.html"> 	
+					<button class="right">
+						<i class="fas fa-angle-right"></i>
+					</button>
+				</a>
+			</div>
+			
+			<button class="monday" onclick="toggleweek(1);">Понедельник</button>
+			
+			<div class="lessons hide mon">
+				<div>
+					Физика<br>§68-70 + Выбрать одну из тем
+				</div>
+				<div>
+					Английский язык<br>p83 ex7(orally) + WB(белый медведь)
+				</div>
+				<div>
+					Геометрия<br>п.15-21 №150(а) №192
+				</div>
+				<div>Геометрия</div>
+				<div>Физ-ра</div>
+				<div>
+					Литература<br>
+				</div>
+				<div><span class="up">НВП</span>/<span class="down">Физика</span> <br></div>
+			</div>
+	
+			<button class="thuesday" onClick="toggleweek(2);">Вторник</button>
+
+			<div class="lessons tue hide">
+
+				<div>
+					УГДД<br>Век живи, век учись
+				</div>
+				<div>
+					<span class="up">История</span>/<span class="down">Комп.Графика</span><br>§11
+				</div>
+				<div>
+					Русский язык<br>стр 218-238
+				</div>
+				<div>
+					Биология<br>
+				</div>
+				<div>Физ-ра</div>
+				<div>История отечества<br></div>
+				<div>
+					Информатика<br>
+				</div>
+			</div>
+
+			<button class="wednesday" onclick="toggleweek(3);">Среда</button>
+
+			<div class="lessons wed hide">
+
+				<div>
+					<span class="up">Биология</span>/<span class="down">Химия</span><br>
+				</div>
+				<div>
+					Алгебра<br>№359(3) №360(1) №363(1) №379(1)
+				</div>
+				<div>
+					Английский язык<br>
+				</div>
+				<div>
+					Украинский язык<br>стр129-133
+				</div>
+				<div>
+					Литераутра<br>
+				</div>
+				<div>Химия</div>§25 стр125 №8 + тесты
+			</div>
+
+			<button class="thuersday" onclick="toggleweek(4);">Четверг</button>
+
+			<div class="lessons tuer hide">
+
+
+				<div>Физ-ра</div>
+				<div>
+					Оющество<br>повторить
+				</div>
+				<div>
+					Русский язык<br>
+				</div>
+				<div>
+					Экономика<br>
+				</div>
+				<div>
+					Всеобщая история<br>стр67-69
+				</div>
+				<div>
+					НВП<br>
+				</div>
+			</div>
+
+			<button class="friday" onclick="toggleweek(5);">Пятница</button>
+
+			<div class="lessons F hide">
+
+				<div>
+					География<br>стр110 №118
+				</div>
+				<div>
+					Английский язык<br>
+				</div>
+				<div>
+					Алгебра<br>
+				</div>
+				<div>
+					Физика<br>
+				</div>
+				<div>
+					Литература<br>
+				</div>
+				<div>
+					<span class="up">Алгебра</span>
+					/
+					<span class="down">Химия</span><br>
+				</div>
+				<div>
+					Информатика<br>
+				</div>
+			</div>
+		</div>
+
+			<div id="issue">
+				<a id="issue" target="_blank" href="https://vk.com/droull">Нашли ошибку? Есть идея?</a>
+			</div>
+
+		<script src="../javascript/main.js"></script>
+
+	</div>
+</body>
+</html>
