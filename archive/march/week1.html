@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="week2"><!-- Шиппиринг из main для underlin`a-->
+<head>
+	
+	<meta charset="UTF-8">
+	<title>Дневник работяги</title>
+	<link rel="stylesheet" href="../css/general.css">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<script src="../javascript/jquery.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	
+</head>
+<body>
+	<div class="wrapper">
+		
+		<div class="main">
+			
+			<div class="switch">
+				<a href="week4.html">
+					<button class="left">
+						<i class="fas fa-angle-left"></i>
+					</button>
+				</a>
+				04-08
+				<a href="week2.html">
+					<button class="right">
+						<i class="fas fa-angle-right"></i>
+					</button>
+				</a>
+			</div>
+			
+			<button class="monday" onclick="toggleweek(1);">Понедельник</button>
+			
+			<div class="lessons hide mon">
+				<div>
+					Физика<br>стр257-258 Решить любые 5 задач
+				</div>
+				<div>
+					Английский язык<br>p162 ex2b(in pen) + p96 ex2*
+				</div>
+				<div>
+					Геометрия<br>К.р."Перпендикулярность плоскостей"
+				</div>
+				<div>Геометрия</div>
+				<div>Физ-ра</div>
+				<div>
+					Литература<br>Роман "Война и мир" 1том 1часть
+				</div>
+				<div>
+					<span class="up">НВП</span>/<span class="down">Физика</span> <br>
+				</div>
+			</div>
+	
+			<button class="thuesday" onClick="toggleweek(2);">Вторник</button>
+
+			<div class="lessons tue hide">
+
+				<div>
+					УГДД<br>Гос.символика России
+				</div>
+				<div>
+					<span class="up">История</span>/<span class="down">Комп.Графика</span><br>
+				</div>
+				<div>
+					Русский язык<br>
+				</div>
+				<div>
+					Биология<br>§34+стр159(тренируемся)
+				</div>
+				<div>Физ-ра</div>
+				<div>История отечества<br></div>
+				<div>
+					Информатика<br>
+				</div>
+			</div>
+
+			<button class="wednesday" onclick="toggleweek(3);">Среда</button>
+
+			<div class="lessons wed hide">
+
+				<div>
+					<span class="up">Биология</span>/<span class="down">Химия</span><br>§29-30 стр138 №5(б)+сообщение о мыле, синтетыческих моющих ср-вах
+				</div>
+				<div>
+					Алгебра<br>§23,24 №430(2,4) №431(1,3) №433(2,3) №442(1,3)
+				</div>
+				<div>
+					Английский язык<br>Spotlight p7 + voc.work
+				</div>
+				<div>
+					Украинский язык<br>"Хто ж у кого вкрав щастя" контр.твор
+				</div>
+				<div>
+					Литераутра<br>
+				</div>
+				<div>Химия</div>
+			</div>
+
+			<button class="thuersday" onclick="toggleweek(4);">Четверг</button>
+
+			<div class="lessons tuer hide">
+				Бтв 4 урока<hr>
+				<div>Физ-ра</div>
+				<div>
+					Оющество<br>"Считаете ли вы ваше гос-во правовым,почему?Что необходимо вашему гос-ву чтобы оно стало правовым?"
+				</div>
+				<div>
+					Русский язык<br>
+				</div>
+				<div>
+					Экономика<br>
+				</div>
+				<div>
+					Всеобщая история<br>
+				</div>
+				<div>
+					НВП<br>
+				</div>
+			</div>
+
+			<button class="friday" onclick="toggleweek(5);">Пятница</button>
+
+			<div class="lessons F hide">
+				休みの日<hr>
+				<div>
+					География<br>
+				</div>
+				<div>
+					Английский язык<br>
+				</div>
+				<div>
+					Алгебра<br>
+				</div>
+				<div>
+					Физика<br>
+				</div>
+				<div>
+					Литература<br>
+				</div>
+				<div>
+					<span>Алгебра</span><br>
+				</div>
+				<div>
+					Информатика<br>
+				</div>
+			</div>
+		</div>
+
+			<div id="issue">
+				<a id="issue" target="_blank" href="https://vk.com/droull">Нашли ошибку? Есть идея?</a>
+			</div>
+
+		<script src="../javascript/main.js"></script>
+
+	</div>
+</body>
+</html>
